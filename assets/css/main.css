@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas;
+}
+header{
+    display: flex;
+    border-bottom: thin solid #dcdcdc;
+    box-sizing: border-box;
+    padding: 10px 45px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+header .logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+header .menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 14px;
+}
+header .menu a{
+    font-size: 16px;
+    color: #2b2b2b;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: .4s ease-in-out;
+}
+header .menu a:hover{
+    transition: .4s ease-in-out;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+}
+
+
+
+.authorization, .registration{
+    position: absolute;
+    top: calc(50% - 160px);
+    left: calc(50% - 160px);
+    width: 320px;
+    margin: 0 auto;
+    height: 320px;
+    min-height: 320px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: thin solid #dcdcdc;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registration{
+    top: calc(50% - 240px);
+    height: 520px;
+    min-height: 520px;
+}
+.authorization input, .registration input {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-bottom: thin solid #dcdcdc;
+}
+.authorization input[type=submit], .registration input[type=submit]{
+    width: 80%;
+    text-align: center;
+    background: #dcdcdc;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.authorization a, .registration a{
+    font-size: 12px;
+    color: #2b2b2b;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.authorization .error, .registration .error{
+    color: #eb4444;
+    font-weight: bold;
+}
+.success{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 200px);
+    width: 400px;
+    min-height: 100px;
+    font-size: 16px;
+    border: thin solid #dcdcdc;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+}
